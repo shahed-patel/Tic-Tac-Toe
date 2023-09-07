@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.gameName {
+    height: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+
+    color: antiquewhite;
+    background-color: black;
+    font-size: 1.3rem;
+}
+
+.gameContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: repeat(3, 10vw);
+    grid-template-columns: repeat(3, 10vw);
+    margin-top: 50px;
+    position: relative;
+}
+
+.wholePlayers {
+    font-size: 2rem;
+    border: 2px solid black;
+
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.wholePlayers:hover {
+    background-color: lightgrey;
+    transform: scale(1.1);
+}
+.bt-0 {
+    border-top: 0;
+}
+
+.bb-0 {
+    border-bottom: 0;
+}
+
+.br-0 {
+    border-right: 0;
+}
+
+.bl-0 {
+    border-left: 0;
+}
+
+.turn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    font-size: 2rem;
+}
+
+.button {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    margin-top: 20px;
+}
+
+#reset {
+    height: 60px;
+    width: 100px;
+    color: aliceblue;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+#reset:hover {
+    color: black;
+    background-color: azure;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.BY {
+    float: right;
+    margin-top: 30px;
+    flex-wrap: wrap;
+
+    font-size: 1.5rem;
+    font-family: cursive;
+}
+
+@media (min-width : 0px) and (max-width : 425px) {
+    .container {
+        display: grid;
+        grid-template-rows: repeat(3, 20vw);
+        grid-template-columns: repeat(3, 20vw);
+    }
+
+    .turn {
+        font-size: 1.5rem;
+    }
+
+    #reset {
+        height: 30px;
+        width: 80px;
+    }
+
+    .BY {
+        font-size: 1rem;
+    }
+
+}
+
+@media (min-width : 425px) and (max-width : 768px) {
+    .container {
+        display: grid;
+        grid-template-rows: repeat(3, 15vw);
+        grid-template-columns: repeat(3, 15vw);
+    }
+
+    .turn {
+        font-size: 1.5rem;
+    }
+
+    #reset {
+        height: 30px;
+        width: 80px;
+    }
+
+    .BY {
+        font-size: 1rem;
+    }
+
+}
